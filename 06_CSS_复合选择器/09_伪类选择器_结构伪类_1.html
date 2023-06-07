@@ -1,0 +1,63 @@
+<!--
+ * @Author: JinAndWan20210214 jiwei_jin@126.com
+ * @Date: 2023-05-31 14:31:31
+ * @LastEditors: JinAndWan20210214 jiwei_jin@126.com
+ * @LastEditTime: 2023-05-31 14:44:21
+ * @FilePath: \css\06_CSS_复合选择器\09_伪类选择器_结构伪类_1.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>09_伪类选择器_结构伪类_1</title>
+    <style>
+        /* 选中的是div的第一个儿子p元素——看结构1 */
+        /* div > p:first-child {
+            color: red;
+        } */
+        /* 选中的是div的第一个儿子p元素——看结构2 */
+        /* div > p:first-child {
+            color: red;
+        } */
+        /* 选中的是div的后代p元素，且p的父级是谁无所谓，但p必须是其父亲的第一个儿子——看结构3 */
+        /* div p:first-child {
+            color: red;
+        } */
+        /* 选中的是p元素，且p的父级是谁无所谓，但p必须是其父亲的第一个儿子——看结构3 */
+        p:first-child {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 结构1 -->
+    <!-- <div>
+        <p>zs:98</p>
+        <p>ls:88</p>
+        <p>ww:78</p>
+        <p>zl:68</p>
+    </div> -->
+
+    <!-- 结构2 -->
+    <!-- <div>
+        <span>zs:98</span>
+        <p>ls:88</p>
+        <p>ww:78</p>
+        <p>zl:68</p>
+    </div> -->
+
+    <!-- 结构3 -->
+    <p>测试1</p>
+    <div>
+        <p>测试2</p>
+        <marquee>
+            <p>测试3</p>
+            <p>zs:98</p>
+        </marquee>
+        <p>ls:88</p>
+        <p>ww:78</p>
+        <p>zl:68</p>
+    </div>
+</body>
+</html>

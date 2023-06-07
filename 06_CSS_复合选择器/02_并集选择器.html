@@ -1,0 +1,46 @@
+<!--
+ * @Author: JinAndWan20210214 jiwei_jin@126.com
+ * @Date: 2023-05-31 11:22:45
+ * @LastEditors: JinAndWan20210214 jiwei_jin@126.com
+ * @LastEditTime: 2023-05-31 11:29:20
+ * @FilePath: \css\06_CSS_复合选择器\02_并集选择器.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>02_并集选择器</title>
+    <style>
+        .rich {
+            color: gold;
+        }
+        .beauty {
+            color: red;
+        }
+        .dog {
+            color: blue;
+        }
+        .pig {
+            color: pink;
+        }
+
+        .rich,
+        .beauty,
+        .dog,
+        .pig {
+            font-size: 40px;
+            background-color: gray;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2>破产王五（不加任何样式）</h2>
+    <hr>
+    <p class="dog">小狗旺财</p>
+    <p class="pig">小猪佩奇</p>
+</body>
+</html>

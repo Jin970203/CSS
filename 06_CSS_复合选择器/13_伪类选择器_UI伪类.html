@@ -1,0 +1,37 @@
+<!--
+ * @Author: JinAndWan20210214 jiwei_jin@126.com
+ * @Date: 2023-05-31 15:54:48
+ * @LastEditors: JinAndWan20210214 jiwei_jin@126.com
+ * @LastEditTime: 2023-05-31 16:55:04
+ * @FilePath: \css\06_CSS_复合选择器\13_伪类选择器_UI伪类.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>13_伪类选择器_UI伪类</title>
+    <style>
+        /* 选中的是勾选的复选框或单选按钮 */
+        input:checked {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* 选中的是被禁用的input元素 */
+        input:disabled {
+            background-color: gray;
+        }
+        /* 选中的是被可用的input元素 */
+        input:enabled {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <input type="radio">
+    <input type="text">
+    <input type="text" disabled>
+</body>
+</html>

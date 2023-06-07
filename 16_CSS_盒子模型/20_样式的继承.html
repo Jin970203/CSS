@@ -1,0 +1,42 @@
+<!--
+ * @Author: JinAndWan20210214 jiwei_jin@126.com
+ * @Date: 2023-06-06 11:27:32
+ * @LastEditors: JinAndWan20210214 jiwei_jin@126.com
+ * @LastEditTime: 2023-06-06 11:39:33
+ * @FilePath: \css\16_CSS_盒子模型\20_样式的继承.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>20_样式的继承</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        #d1 {
+            height: 600px;
+            padding: 50px;
+            background-color: deepskyblue;
+        }
+        #d2 {
+            height: 400px;
+            padding: 50px;
+            background-color: orange;
+            font-size: 40px;
+            color: yellow;
+            font-weight: bold;
+        }
+        #d3 {
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <div id="d2">
+            <div id="d3">kkk</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!--
+ * @Author: JinAndWan20210214 jiwei_jin@126.com
+ * @Date: 2023-05-31 11:07:24
+ * @LastEditors: JinAndWan20210214 jiwei_jin@126.com
+ * @LastEditTime: 2023-05-31 11:16:23
+ * @FilePath: \css\06_CSS_复合选择器\01_交集选择器.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_交集选择器</title>
+    <style>
+        .rich {
+            color: gold;
+        }
+        .beauty {
+            color: red;
+        }
+        p.beauty {
+            color: green;
+        }
+        .beauty.rich {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <hr>
+    <p class="beauty">小狗旺财</p>
+    <p class="beauty">小猪佩奇</p>
+</body>
+</html>

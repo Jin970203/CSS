@@ -1,0 +1,32 @@
+<!--
+ * @Author: JinAndWan20210214 jiwei_jin@126.com
+ * @Date: 2023-06-06 16:41:43
+ * @LastEditors: JinAndWan20210214 jiwei_jin@126.com
+ * @LastEditTime: 2023-06-06 17:24:55
+ * @FilePath: \css\16_CSS_盒子模型\26_行内块的幽灵空白问题.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>26_行内块的幽灵空白问题</title>
+    <style>
+        div {
+            width: 600px;
+            background-color: skyblue;
+            font-size: 0px;
+        }
+        img {
+            height: 150px;
+            /* vertical-align: bottom; */
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../images/eva.jpg" alt="eva">
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!--
+ * @Author: JinAndWan20210214 jiwei_jin@126.com
+ * @Date: 2023-05-31 11:41:50
+ * @LastEditors: JinAndWan20210214 jiwei_jin@126.com
+ * @LastEditTime: 2023-05-31 11:53:48
+ * @FilePath: \css\06_CSS_复合选择器\03_后代选择器.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>03_后代选择器</title>
+    <style>
+        ul li {
+            color: red;
+        }
+        ol li {
+            color: green;
+        }
+        ul li a {
+            color: orange;
+        }
+        ol li a {
+            color: gray;
+        }
+        .subject #front-end {
+            color: blue;
+        }
+        .subject .java {
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>xx</li>
+        <li>yy</li>
+        <li>
+            <a href="#">zz</a>
+        </li>
+    </ul>
+    <hr>
+    <ol>
+        <li>zs</li>
+        <li>ls</li>
+        <li>
+            <a href="#">ww</a>
+        </li>
+    </ol>
+    <hr>
+    <ol class="subject">
+        <li id="front-end">qd</li>
+        <li class="java">java</li>
+        <li>dsj</li>
+        <li>ui</li>
+    </ol>
+</body>
+</html>

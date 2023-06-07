@@ -1,0 +1,43 @@
+<!--
+ * @Author: JinAndWan20210214 jiwei_jin@126.com
+ * @Date: 2023-05-31 13:51:38
+ * @LastEditors: JinAndWan20210214 jiwei_jin@126.com
+ * @LastEditTime: 2023-05-31 14:00:33
+ * @FilePath: \css\06_CSS_复合选择器\06_属性选择器.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>06_属性选择器</title>
+    <style>
+        /* 第一种写法：选中具有title属性的元素 */
+        /* [title] {
+            color: rebeccapurple;
+        } */
+        /* 第二种写法：选中具有title属性的元素，且属性值为atguigu1的元素 */
+        /* [title="atguigu1"] {
+            color: rebeccapurple;
+        } */
+        /* 第三种写法：选中具有title属性的元素，且属性值为a开头的元素 */
+        /* [title^="a"] {
+            color: rebeccapurple;
+        } */
+        /* 第四种写法：选中具有title属性的元素，且属性值为u结尾的元素 */
+        /* [title$="3"] {
+            color: rebeccapurple;
+        } */
+        /* 第五种写法：选中具有title属性的元素，且属性值包含u的元素 */
+        [title*="u"] {
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div title="atguigu1">sgg1</div>
+    <div title="atguigu2">sgg2</div>
+    <div title="guigu3">sgg3</div>
+    <div title="guigu4">sgg4</div>
+</body>
+</html>
